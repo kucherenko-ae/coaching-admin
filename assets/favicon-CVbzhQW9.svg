@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .favicon-stroke { stroke: #ffffff; }
+      }
+      @media (prefers-color-scheme: light) {
+        .favicon-stroke { stroke: #1f2937; }
+      }
+    </style>
+  </defs>
+  <path class="favicon-stroke" d="M8.25 24C5.5 24 4.25 22.2 4.25 20V10C4.25 7.8 5.5 6 8.25 6C11 6 12.25 7.8 12.25 10V20C12.25 22.2 11 24 8.25 24Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path class="favicon-stroke" d="M23.75 24C26.5 24 27.75 22.2 27.75 20V10C27.75 7.8 26.5 6 23.75 6C21 6 19.75 7.8 19.75 10V20C19.75 22.2 21 24 23.75 24Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path class="favicon-stroke" d="M12.25 16H19.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="favicon-stroke" d="M30 19V13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="favicon-stroke" d="M2 19V13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
