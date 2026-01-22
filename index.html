@@ -10,12 +10,12 @@
     <!-- PWA Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Coaching" />
+    <meta name="apple-mobile-web-app-title" content="FT Desk" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#18181b" />
     <link rel="manifest" href="/coaching-admin/manifest.json" />
     
-    <title>Coaching Admin</title>
+    <title>Fitness Trainer Desk</title>
 
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
@@ -43,18 +43,46 @@
     <!-- End Single Page Apps for GitHub Pages -->
 
     <script>
-      const preferredTheme = localStorage.getItem('_preferred_theme') ?? 'system';
-      document.documentElement.classList.toggle(
-        'dark',
-        preferredTheme === 'dark' ||
-        (
-          preferredTheme === 'system' &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches
+      // Theme colors
+      ;(() => {
+        const preferredTheme = localStorage.getItem('_preferred_theme') ?? 'system';
+        document.documentElement.classList.toggle(
+          'dark',
+          preferredTheme === 'dark' ||
+          (
+            preferredTheme === 'system' &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches
+          )
         )
-      )
+      })()
+
+      // Lead font size
+      ;(() => {
+        const preferredFs = localStorage.getItem('_preferred_font_size') ?? '1';
+        document.documentElement.style.fontSize = `${preferredFs}rem`;
+      })();
     </script>
-    <script type="module" crossorigin src="/coaching-admin/assets/index.wMyehlQv.js"></script>
-    <link rel="stylesheet" crossorigin href="/coaching-admin/assets/index.D5zjzpUy.css">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106348324', 'ym');
+
+      ym(106348324, 'init', {
+        defer: true,
+        // ssr: true,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true
+      });
+    </script>
+    <!-- /Yandex.Metrika counter -->
+    <script type="module" crossorigin src="/coaching-admin/assets/index.Dc-_3_MA.js"></script>
+    <link rel="stylesheet" crossorigin href="/coaching-admin/assets/index.BTtDGybl.css">
   </head>
   <body>
     <div id="root"></div>

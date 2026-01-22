@@ -1,6 +1,6 @@
 // Версия автоматически обновляется из package.json при сборке
 const VERSION = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '0.1.0'
-const CACHE_NAME = `coaching-admin-v${VERSION}`
+const CACHE_NAME = `ft-desk-v${VERSION}`
 const BASE_PATH = '/coaching-admin'
 
 // Кешируем только entrypoint SPA

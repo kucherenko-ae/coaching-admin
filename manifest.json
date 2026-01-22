@@ -1,6 +1,6 @@
 {
-  "name": "Coaching Admin",
-  "short_name": "Coaching",
+  "name": "Fitness Trainer Desk",
+  "short_name": "FT Desk",
   "start_url": "/coaching-admin/",
   "display": "standalone",
   "background_color": "#ffffff",
