@@ -20,7 +20,7 @@
       "purpose": "maskable"
     },
     {
-      "src": "/coaching-admin/app-icon-app.svg",
+      "src": "/coaching-admin/app-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
