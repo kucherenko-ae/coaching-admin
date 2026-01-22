@@ -2,11 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/coaching-admin/assets/favicon-CVbzhQW9.svg" />
-    <link rel="apple-touch-icon" href="/coaching-admin/assets/favicon-CVbzhQW9.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <link rel="icon" type="image/svg+xml" href="/coaching-admin/assets/favicon.CVbzhQW9.svg" />
+    <link rel="apple-touch-icon" href="/coaching-admin/app-icon-180.png" />
+    
+    <!-- PWA Meta Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Coaching" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#18181b" />
+    <link rel="manifest" href="/coaching-admin/manifest.json" />
     
     <title>Coaching Admin</title>
 
@@ -46,10 +53,25 @@
         )
       )
     </script>
-    <script type="module" crossorigin src="/coaching-admin/assets/index-CrEJD13R.js"></script>
-    <link rel="stylesheet" crossorigin href="/coaching-admin/assets/index-BBgoPxBA.css">
+    <script type="module" crossorigin src="/coaching-admin/assets/index.CYursu2P.js"></script>
+    <link rel="stylesheet" crossorigin href="/coaching-admin/assets/index.BBgoPxBA.css">
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/coaching-admin/sw.js')
+            .then((registration) => {
+              console.log('SW registered:', registration)
+            })
+            .catch((error) => {
+              console.log('SW registration failed:', error)
+            })
+        })
+      }
+    </script>
   </body>
 </html>
