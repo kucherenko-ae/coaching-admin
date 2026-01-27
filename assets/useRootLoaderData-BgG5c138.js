@@ -1,0 +1,1 @@
+import{I as e}from"./chunk-JZWAC4HX-DMio0XPM.js";const t=()=>{let t=e(`root`);if(!t)throw Error(`Root loader data is not available`);return t};export{t};
