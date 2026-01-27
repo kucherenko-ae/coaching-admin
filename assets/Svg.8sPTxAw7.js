@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime.CWlfk1IU.js";var t=e();const n=({name:e,...n})=>(0,t.jsx)(`svg`,{...n,children:(0,t.jsx)(`use`,{href:`/coaching-admin/svg-sprite.svg#${e}`})});export{n as t};

@@ -1,0 +1,1 @@
+const e=e=>{document.documentElement.classList.toggle(`dark`,e),document.querySelector(`toast-messages`)?.setAttribute(`data-mode`,e?`dark`:`light`)};export{e as t};
