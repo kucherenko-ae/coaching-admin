@@ -1,1 +1,0 @@
-import{t as e}from"./jsx-runtime-xdwC5iDu.js";var t=e();const n=({label:e,labelClassName:n=``,className:r=``,...i})=>(0,t.jsxs)(`label`,{className:`flex flex-col gap-1 ${n}`,children:[e&&(0,t.jsx)(`span`,{className:`text-tiny text-text-light`,children:e}),(0,t.jsx)(`input`,{className:`appearance-none ${r}`,...i})]});export{n as t};

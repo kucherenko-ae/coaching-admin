@@ -1,1 +1,0 @@
-import{t as e}from"./jsx-runtime-xdwC5iDu.js";var t=e();const n=({message:e,type:n=`error`,children:r})=>(0,t.jsxs)(`div`,{className:`text-sm ${n===`error`?`text-red-600`:`text-green-600`}`,children:[e,r]});export{n as t};

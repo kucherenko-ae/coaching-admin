@@ -1,0 +1,27 @@
+import{D as e,F as t,M as n,R as r,a as i,c as a,f as o,l as s,o as c,p as l,w as u,z as d}from"./chunk-JZWAC4HX-pontpNwO.js";import{t as f}from"./jsx-runtime-Dg8orHAx.js";import{t as p}from"./Svg-Boi9_9HN.js";import{t as m}from"./toggleThemeColor-BUr7mEI6.js";var h=`/coaching-admin/assets/app-B5uXcvIB.css`,g=`/coaching-admin/assets/Montserrat-VariableFont_wght-DcaoeaBt.ttf`,_=`/coaching-admin/assets/Montserrat-Italic-VariableFont_wght-C-ARXqaC.ttf`,v=f();const y=({children:e})=>(0,v.jsx)(`div`,{className:`layout min-h-screen`,children:(0,v.jsx)(`main`,{className:`container mx-auto px-3.5 pt-4 pb-14 max-w-4xl`,children:e})});var b=[{to:`/reports`,label:`Отчеты`,iconName:`calendar`},{to:`/clients`,label:`Клиенты`,iconName:`profile`},{to:`/new`,label:`Добавить`,iconName:`plus-squared`,isAction:!0},{to:`/statistics`,label:`Статистика`,iconName:`status-up`},{to:`/settings`,label:`Настройки`,iconName:`settings`}];const x=()=>{let e=n();return(0,v.jsx)(`nav`,{className:`bottom-navigation fixed bottom-0 left-0 right-0 bg-surface border-t border-border-light shadow-xl pt-1 px-1 rounded-t`,children:(0,v.jsx)(`div`,{className:`flex justify-around gap-2`,children:b.map(t=>(0,v.jsxs)(a,{to:t.to,className:({isActive:e})=>`h-13.5 flex flex-col items-center justify-center gap-1 px-1 flex-1 rounded-md  ${t.isAction?`bg-accent-primary text-background`:``} ${e&&!t.isAction?`bg-accent-primary/15`:``}`,...t.isAction&&{state:{from:e.pathname}},children:[(0,v.jsx)(p,{name:t.iconName,className:`size-6.5`}),(0,v.jsx)(`span`,{className:`text-tiny`,children:t.label})]},t.to))})})};var S=d();const C=()=>{let e=n();return(0,S.useEffect)(()=>{window.ym?.(106348324,`hit`,e.pathname)},[e]),null},w=({children:e})=>((0,S.useLayoutEffect)(()=>{(()=>{let e=localStorage.getItem(`_preferred_theme`)??`system`;m(e===`dark`||e===`system`&&window.matchMedia(`(prefers-color-scheme: dark)`).matches)})(),(()=>{let e=localStorage.getItem(`_preferred_font_size`)??`1`;document.documentElement.style.fontSize=`${e}rem`})()},[]),(0,v.jsxs)(`html`,{lang:`ru`,children:[(0,v.jsxs)(`head`,{children:[(0,v.jsx)(c,{}),(0,v.jsx)(i,{})]}),(0,v.jsxs)(`body`,{children:[e,(0,v.jsx)(l,{}),(0,v.jsx)(o,{}),(0,v.jsx)(`toast-messages`,{className:`bottom-18 right-2 text-xs`,popover:`manual`,tabIndex:-1,"data-mode":`dark`}),(0,v.jsx)(`script`,{children:`
+              (function(m,e,t,r,i,k,a){
+                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+              })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106348324', 'ym');
+
+              ym(106348324, 'init', {
+                defer: true,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true
+              });
+            `}),(0,v.jsx)(`script`,{children:`
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/coaching-admin/sw.js')
+                  .then((registration) => {
+                    console.log('SW registered:', registration)
+                  })
+                  .catch((error) => {
+                    console.log('SW registration failed:', error)
+                  })
+              })
+            }
+            `})]})]})),T=()=>{let e=t(),n=`Unknown error`,r=500;return u(e)?(n=e?.data?.message??e.data,r=e.status):e instanceof Error&&(n=e.message),(0,v.jsxs)(`div`,{className:`route-error`,children:[(0,v.jsx)(`h1`,{children:`Oops`}),(0,v.jsx)(`h2`,{children:r}),n&&(0,v.jsx)(`fieldset`,{children:(0,v.jsx)(`pre`,{children:n})})]})},E=()=>[{charSet:`UTF-8`},{name:`viewport`,content:`width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover`},{name:`apple-mobile-web-app-capable`,content:`yes`},{name:`apple-mobile-web-app-status-bar-style`,content:`black-translucent`},{name:`apple-mobile-web-app-title`,content:`FT Desk`},{name:`mobile-web-app-capable`,content:`yes`},{name:`theme-color`,content:`#18181b`},{title:`Fitness Trainer Desk`}],D=()=>[{rel:`stylesheet`,href:h},{rel:`icon`,type:`image/svg+xml`,href:`/coaching-admin/favicon.svg`},{rel:`apple-touch-icon`,href:`/coaching-admin/app-icon-180.png`},{rel:`manifest`,href:`/coaching-admin/manifest.json`},{rel:`preload`,href:g,as:`font`,type:`font/ttf`,crossOrigin:`anonymous`},{rel:`preload`,href:_,as:`font`,type:`font/ttf`,crossOrigin:`anonymous`},{rel:`preload`,href:`/coaching-admin/svg-sprite.svg`,as:`image`,type:`image/svg+xml`,crossOrigin:`anonymous`}],O=({request:t})=>{let n=new URL(t.url);if(n.search[1]===`/`){let t=n.search.slice(1).split(`&`).map(e=>e.replace(/~and~/g,`&`)).join(`?`);return e(n.pathname.slice(0,-1)+t+n.hash)}return{now:Date.now()}};var k=r(()=>{let e=n();return(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(y,{children:(0,v.jsx)(s,{})}),!e.pathname.includes(`/new`)&&!e.pathname.includes(`/edit`)&&(0,v.jsx)(x,{}),(0,v.jsx)(C,{})]})});export{T as ErrorBoundary,w as Layout,O as clientLoader,k as default,D as links,E as meta};

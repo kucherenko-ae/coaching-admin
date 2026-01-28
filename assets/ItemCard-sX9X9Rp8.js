@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-Dg8orHAx.js";var t=e();const n=({children:e,background:n=`bg-surface`,className:r})=>(0,t.jsx)(`div`,{className:`relative rounded-lg shadow py-3 px-3 space-y-2 ${n} ${r}`,children:e});export{n as t};

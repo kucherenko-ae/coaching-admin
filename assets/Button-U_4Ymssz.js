@@ -1,1 +1,0 @@
-import{t as e}from"./jsx-runtime-xdwC5iDu.js";var t=e();const n=({btnStyle:e=`primary`,smallText:n=!1,className:r,children:i,...a})=>(0,t.jsx)(`button`,{className:`${r} btn-${e} rounded-lg px-2 ${n?`text-sm`:`text-md`}`,...a,children:i});export{n as t};
