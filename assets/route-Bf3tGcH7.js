@@ -1,0 +1,1 @@
+import{D as e}from"./chunk-JZWAC4HX-T8G_BKzq.js";const t=async()=>e(`/reports/attendance`);export{t as clientLoader};

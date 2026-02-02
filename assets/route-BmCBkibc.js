@@ -1,0 +1,1 @@
+import"./packages-lbbSkjGz.js";import{t as e}from"./clients-BC-dSigW.js";const t=async({params:t})=>{let{id:n}=t;if(!n)throw new Response(`Client ID is required`,{status:400});let r=await e.getById(n);if(!r)throw new Response(`Client not found`,{status:404});return{client:r}};export{t as clientLoader};
