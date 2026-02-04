@@ -1,0 +1,1 @@
+import{D as e}from"./chunk-JZWAC4HX-T8G_BKzq.js";const t=async({request:t})=>new URL(t.url).search[1]===`/`?null:e(`/reports/attendance`);export{t as clientLoader};
