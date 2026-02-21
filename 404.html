@@ -1,40 +1,101 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Single Page Apps for GitHub Pages</title>
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment,
-      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-      // Note: this 404.html file must be at least 512 bytes for it to work
-      // with Internet Explorer (it is currently > 512 bytes)
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
 
-      // If you're creating a Project Pages site and NOT using a custom domain,
-      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
-      // This way the code will only replace the route part of the path, and not
-      // the real directory in which the app resides, for example:
-      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
-      // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
-      // Otherwise, leave pathSegmentsToKeep as 0.
-      var pathSegmentsToKeep = 1;
+		<!-- PWA -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="FT Desk" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="theme-color" content="#18181b" />
 
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+		<!-- App icons -->
+		<link rel="icon" href="/coaching-admin/favicon.svg" />
+		<link rel="apple-touch-icon" href="/coaching-admin/app-icon-180.png" />
 
-    </script>
-  </head>
-  <body>
-  </body>
+		<!-- Manifest -->
+		<link rel="manifest" href="/coaching-admin/manifest.json" />
+
+		<!-- Apply theme colors ans font size -->
+		<script>
+			// Theme colors
+			;(() => {
+				const preferredTheme = localStorage.getItem('_preferred_theme') ?? 'system';
+				const isDarkMode = preferredTheme === 'dark' ||
+					(
+						preferredTheme === 'system' &&
+						window.matchMedia('(prefers-color-scheme: dark)').matches
+					)
+
+					document.documentElement.classList.toggle('dark', isDarkMode)
+  				document.querySelector('toast-messages')?.setAttribute('data-mode', isDarkMode ? 'dark' : 'light')
+			})()
+
+			// Lead font size
+			;(() => {
+				const preferredFs = localStorage.getItem('_preferred_font_size') ?? '1';
+				document.documentElement.style.fontSize = `${preferredFs}rem`;
+			})();
+		</script>
+
+		<link href="/coaching-admin/scripts/immutable/entry/start.n6hyh3km.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/CODHMdVD.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/C-exn1gh.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/DMucjYnI.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/BPMTC5_A.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/BUApaBEI.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/C65JyiD-.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/entry/app.UBYVlNNg.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/DsnmJJEf.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/DjPDfx9E.js" rel="modulepreload">
+		<link href="/coaching-admin/scripts/immutable/chunks/CamWHGlP.js" rel="modulepreload">
+		
+	</head>
+
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1xbdap = {
+						base: "/coaching-admin",
+						assets: "/coaching-admin"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/coaching-admin/scripts/immutable/entry/start.n6hyh3km.js"),
+						import("/coaching-admin/scripts/immutable/entry/app.UBYVlNNg.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						addEventListener('load', function () {
+							navigator.serviceWorker.register('/coaching-admin/service-worker.js');
+						});
+					}
+				}
+			</script>
+		</div>
+
+		<!-- Yandex metrics -->
+		<script type="module">
+			(function(m,e,t,r,i,k,a){
+				m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+				m[i].l=1*new Date();
+				for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+				k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+			})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106348324', 'ym');
+
+			ym(106348324, 'init', {
+				defer: true,
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true
+			});
+		</script>
+	</body>
 </html>

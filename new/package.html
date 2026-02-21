@@ -12,11 +12,11 @@
 		<meta name="theme-color" content="#18181b" />
 
 		<!-- App icons -->
-		<link rel="icon" href="./favicon.svg" />
-		<link rel="apple-touch-icon" href="./app-icon-180.png" />
+		<link rel="icon" href="../favicon.svg" />
+		<link rel="apple-touch-icon" href="../app-icon-180.png" />
 
 		<!-- Manifest -->
-		<link rel="manifest" href="./manifest.json" />
+		<link rel="manifest" href="../manifest.json" />
 
 		<!-- Apply theme colors ans font size -->
 		<script>
@@ -40,17 +40,17 @@
 			})();
 		</script>
 
-		<link href="./scripts/immutable/entry/start.n6hyh3km.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/CODHMdVD.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/C-exn1gh.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/DMucjYnI.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/BPMTC5_A.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/BUApaBEI.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/C65JyiD-.js" rel="modulepreload">
-		<link href="./scripts/immutable/entry/app.UBYVlNNg.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/DsnmJJEf.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/DjPDfx9E.js" rel="modulepreload">
-		<link href="./scripts/immutable/chunks/CamWHGlP.js" rel="modulepreload">
+		<link href="../scripts/immutable/entry/start.n6hyh3km.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/CODHMdVD.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/C-exn1gh.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/DMucjYnI.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/BPMTC5_A.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/BUApaBEI.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/C65JyiD-.js" rel="modulepreload">
+		<link href="../scripts/immutable/entry/app.UBYVlNNg.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/DsnmJJEf.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/DjPDfx9E.js" rel="modulepreload">
+		<link href="../scripts/immutable/chunks/CamWHGlP.js" rel="modulepreload">
 		
 	</head>
 
@@ -59,22 +59,22 @@
 			<script>
 				{
 					__sveltekit_1xbdap = {
-						base: new URL(".", location).pathname.slice(0, -1),
+						base: new URL("..", location).pathname.slice(0, -1),
 						assets: "/coaching-admin"
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("./scripts/immutable/entry/start.n6hyh3km.js"),
-						import("./scripts/immutable/entry/app.UBYVlNNg.js")
+						import("../scripts/immutable/entry/start.n6hyh3km.js"),
+						import("../scripts/immutable/entry/app.UBYVlNNg.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
 
 					if ('serviceWorker' in navigator) {
 						addEventListener('load', function () {
-							navigator.serviceWorker.register('./service-worker.js');
+							navigator.serviceWorker.register('../service-worker.js');
 						});
 					}
 				}

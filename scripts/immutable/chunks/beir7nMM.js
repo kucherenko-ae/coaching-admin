@@ -1,0 +1,1 @@
+const g=(t,o=!1)=>{const r=t.getFullYear(),n=String(t.getMonth()+1).padStart(2,"0"),a=String(t.getDate()).padStart(2,"0");if(o){const s=String(t.getHours()).padStart(2,"0"),e=String(t.getMinutes()).padStart(2,"0");return`${r}-${n}-${a}T${s}:${e}`}return`${r}-${n}-${a}`};export{g as f};
