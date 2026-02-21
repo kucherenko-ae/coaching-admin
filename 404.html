@@ -71,12 +71,6 @@
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
-
-					if ('serviceWorker' in navigator) {
-						addEventListener('load', function () {
-							navigator.serviceWorker.register('/coaching-admin/service-worker.js');
-						});
-					}
 				}
 			</script>
 		</div>
@@ -96,6 +90,21 @@
 				trackLinks: true,
 				accurateTrackBounce: true
 			});
+		</script>
+
+		<!-- Register service worker -->
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register('/coaching-admin/service-worker.js')
+						.then(registration => {
+							console.log('Service Worker registered with scope:', registration.scope);
+						})
+						.catch(error => {
+							console.error('Service Worker registration failed:', error);
+						});
+				});
+			}
 		</script>
 	</body>
 </html>
