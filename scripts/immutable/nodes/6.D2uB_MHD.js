@@ -1,1 +1,0 @@
-import{r as e}from"../chunks/DbkiC8m2.js";import{r}from"../chunks/hp4PFHFv.js";const t=async()=>r(301,e("/activity/attendance")),n=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{n as universal};
